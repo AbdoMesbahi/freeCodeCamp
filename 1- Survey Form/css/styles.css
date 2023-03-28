@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  line-height: 1.6;
+  font-family: Montserrat, sans-serif;
+  color: #333;
+}
+
+main {
+  width: 100%;
+  margin: 1em auto;
+  padding: 1em;
+}
+
+.header {
+  padding: 2em;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+p,
+label {
+  margin-bottom: 0.5em;
+}
+
+h1,
+footer p {
+  font-family: "Ubuntu", sans-serif;
+  margin-bottom: 0.5em;
+}
+
+form {
+  margin: auto;
+  border-radius: 0.25rem;
+  font-size: 1.5rem;
+  padding: 1em;
+  background-color: #b2a4ff;
+  max-width: 800px;
+}
+
+fieldset {
+  border: none;
+  margin: 1em auto 1.6em;
+}
+
+label {
+  display: block;
+}
+
+.input-field {
+  width: 100%;
+  padding: 1em;
+  border-radius: 5px;
+  color: #495057;
+  border: none;
+  font-family: Montserrat, sans-serif;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 0.5em;
+}
+
+:focus:is(input, select, textarea) {
+  outline: rgb(89, 89, 188) solid 1.5px;
+}
+
+textarea {
+  height: 10em;
+}
+
+button {
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 0.4em 0;
+  margin-top: 0.5em;
+  background-color: #b2a4ff;
+  border: 0.5px solid #f9f9f9;
+  border-radius: 5px;
+  color: #333;
+}
+
+button:hover {
+  background-color: #ac9efc;
+  cursor: pointer;
+}
+
+footer {
+  margin: 6em auto 3em;
+  text-align: center;
+}

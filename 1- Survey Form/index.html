@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Abdo Mesbahi" />
+    <meta
+      name="description"
+      content="My survey form project for freeCodeCamp's Responsive Web Design course using HTML and CSS."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="https://www.flaticon.com/free-icons/form"
+      title="form icons"
+      type="image/x-icon"
+    />
+    <title>My Survey Form</title>
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">
+          My first freeCodeCamp project for responsive web design course made
+          using HTML and CSS.
+        </p>
+      </header>
+      <form action="https://httpbin.org/get" id="survey-form">
+        <fieldset>
+          <label id="name-label" for="name">Name</label>
+          <input
+            id="name"
+            class="input-field"
+            type="text"
+            placeholder="Enter your name"
+            required
+          />
+        </fieldset>
+        <fieldset>
+          <label id="email-label" for="email">Email</label>
+          <input
+            id="email"
+            class="input-field"
+            type="email"
+            placeholder="Enter your email"
+            required
+          />
+        </fieldset>
+        <fieldset>
+          <label id="number-label" for="number">Age</label>
+          <input
+            id="number"
+            class="input-field"
+            type="number"
+            placeholder="Age"
+            required
+            min="12"
+            max="99"
+          />
+        </fieldset>
+        <fieldset>
+          <p>Which best describes your role?</p>
+          <select id="dropdown" class="input-field">
+            <option disabled selected>Select your role</option>
+            <option>Student</option>
+            <option>Employee</option>
+            <option>Employer</option>
+            <option>Other</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <p>Do you like the work I've done here?</p>
+          <label>
+            <input name="recommend" type="radio" value="definitely" />
+            Definitely
+          </label>
+          <label>
+            <input name="recommend" type="radio" value="maybe" />
+            Maybe
+          </label>
+          <label>
+            <input name="recommend" type="radio" value="not-sure" />
+            Not sure
+          </label>
+        </fieldset>
+        <fieldset>
+          <p>What is the most thing you like about my survey form?</p>
+          <label>
+            <input value="styling" type="checkbox" />
+            Styling
+          </label>
+          <label>
+            <input value="structure" type="checkbox" />
+            Structure
+          </label>
+          <label>
+            <input value="colors" type="checkbox" />
+            Colors
+          </label>
+          <label>
+            <input value="responsivness" type="checkbox" />
+            Responsivness
+          </label>
+        </fieldset>
+        <fieldset>
+          <p>Any comments or suggestions?</p>
+          <textarea
+            class="input-field"
+            placeholder="Enter your comment..."
+          ></textarea>
+        </fieldset>
+        <button id="reset" type="reset">Reset</button>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </main>
+    <footer class="footer">
+      <p>&copy; Abdo Mesbahi</p>
+    </footer>
+  </body>
+</html>
