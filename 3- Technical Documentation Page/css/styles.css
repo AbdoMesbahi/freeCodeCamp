@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto+Serif&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+  min-height: 100vh;
+  font-family: "Roboto Serif", serif;
+}
+
+main {
+  padding: 1.5em;
+}
+
+p {
+  color: #333;
+}
+
+nav {
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100%;
+  border-bottom: 3px solid #333;
+  height: 300px;
+}
+
+nav header {
+  position: sticky;
+  top: 0;
+  background-color: rgb(234, 234, 15);
+  text-align: center;
+  padding: 0.25em;
+  white-space: nowrap;
+  border-bottom: 2px solid #333;
+}
+
+nav header h1 {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0.25em;
+  letter-spacing: 2px;
+}
+
+header {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 900;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  padding: 1em;
+  border-bottom: 1.5px solid #333;
+  padding-left: 1em;
+}
+
+nav li:last-child {
+  border: none;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  display: block;
+}
+
+.code-block {
+  background-color: #eee;
+  width: 100%;
+  margin: auto;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+footer {
+  margin: 4em auto 2em;
+  padding: 2em 2em 1em;
+  text-align: center;
+}
+
+footer p {
+  font-weight: bolder;
+}
+
+/* MEDIUM AND ABOVE SCREENS */
+
+@media screen and (min-width: 780px) {
+  nav {
+    position: fixed;
+    left: 0;
+    height: 100%;
+    width: 25%;
+    border-right: 3px solid #333;
+  }
+
+  main,
+  footer {
+    margin-left: 25%;
+  }
+}
